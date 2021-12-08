@@ -1,0 +1,12 @@
+		Mat h;
+		h.create(11,11,CV_32F);
+		int rRows, rCols;
+		rRows = (h.rows-1)/2;
+		rCols = (h.rows-1)/2;*
+		for (int l = 0; l<2*rRows; l++)
+		{
+			for(int c = 0; c<2*rCols; c++)
+			{
+				h.at<float>(l,c)=1.0/(h.rows*h.cols);
+			}
+		}
